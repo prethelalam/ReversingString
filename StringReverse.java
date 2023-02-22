@@ -4,7 +4,7 @@ import java.io.*;
 
 public class StringReverse { //this is setting up a class
 
-    static void ReserveString(){
+    static void ReverseString(){
         String ntexts = "";
         char c;
 
@@ -20,7 +20,7 @@ public class StringReverse { //this is setting up a class
         System.out.println();
     }
 
-    static void ReserveIntArray(){ //I want to see if I can reserve an array
+    static void ReverseIntArray(){ //I want to see if I can reverse an array
         int[] name = {1,2,3,4,5}; //creating an integer array
 
         System.out.println(Arrays.toString(name)); //printing the array
@@ -30,11 +30,11 @@ public class StringReverse { //this is setting up a class
             name[i] = name[name.length - i -1]; 
             name[name.length - i - 1] = j;
         }
-        System.out.println(Arrays.toString(name));
+        System.out.println(Arrays.toString(name)); //this is how to print a string array
         System.out.println();
     }
 
-    static void ReserveStringArray(){
+    static void ReverseStringArray(){
         System.out.print("Enter a word: ");
         Scanner one = new Scanner(System.in);
         String input = one.nextLine();
@@ -42,15 +42,15 @@ public class StringReverse { //this is setting up a class
         char[] charWords = input.toCharArray(); //here we are turning the user input into a char array
         System.out.print("Reverse word: ");
         
-        for (int i = charWords.length -1; i >= 0; i--){ //this is how we reserve the char array. so we get the total length of the string (charWords.length), then we did i-- so the count goes down 1 until it reaches index 0 which is the first letter of the string
+        for (int i = charWords.length -1; i >= 0; i--){ //this is how we reverse the char array. so we get the total length of the string (charWords.length), then we did i-- so the count goes down 1 until it reaches index 0 which is the first letter of the string
             System.out.print(charWords[i]);
         }
     }
 
 public static void main(String[] args){ 
-    ReserveString();
-    ReserveIntArray();
-    ReserveStringArray();
+    ReverseString();
+    ReverseIntArray();
+    ReverseStringArray();
 }
 }
 
