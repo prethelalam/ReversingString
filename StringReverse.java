@@ -21,16 +21,16 @@ public class StringReverse { //this is setting up a class
     }
 
     static void ReverseIntArray(){ //I want to see if I can reverse an array
-        int[] name = {1,2,3,4,5}; //creating an integer array
+        int[] numbers = {1,2,3,4,5}; //creating an integer array
 
-        System.out.println(Arrays.toString(name)); //printing the array
+        System.out.println(Arrays.toString(numbers)); //printing the array
 
-        for(int i = 0; i < name.length / 2; i++){ //for loop to do a reversal
-            int j = name[i]; //storing the array in int j
-            name[i] = name[name.length - i -1]; 
-            name[name.length - i - 1] = j;
+        for(int i = 0; i < numbers.length / 2; i++){ //for loop to do a reversal
+            int j = numbers[i]; //storing the array in int j
+            numbers[i] = numbers[numbers.length - i -1]; 
+            numbers[numbers.length - i - 1] = j;
         }
-        System.out.println(Arrays.toString(name)); //this is how to print a string array
+        System.out.println(Arrays.toString(numbers)); //this is how to print a string array
         System.out.println();
     }
 
